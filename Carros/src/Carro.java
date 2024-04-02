@@ -2,17 +2,23 @@
 public class Carro {
 
 		int potencia; // Atributos da classe Carro
-		float velocidade;
+		int velocidade;
 		String nome;
-		
+
 		//Construtor [mesmo nome da classe][Nao defini retorno]
-		public Carro(int potencia) {
+		public Carro() {
 			//super();
 			this.potencia = potencia;
-			velocidade =0;
+			velocidade=0;
+		}
+		
+		public void potencia(int potencia) {
+			//super();
+			this.potencia = potencia;
+		//	velocidade=0;
 		}
 
-		public Carro(float velocidade) {
+		public Carro(int velocidade) {
 			this.velocidade = velocidade;
 		}
 		void acelerar() {
@@ -23,11 +29,14 @@ public class Carro {
 			velocidade = velocidade / 2;
 		}
 		
-		float getVelocidade() {
+		int getVelocidade() {
 			return velocidade;
 		}
 		
 		void imprimir() {
 			System.out.println("O carro " +nome+ " está a velocidade de "+getVelocidade()+" por km/h");
 		}
+
+
+
 }

@@ -9,10 +9,10 @@ public class Principal {
 		carro.nome = "Corcel";
 		carro.velocidade = 15;
 		
-		Carro carro2 = new Carro(1.6f);
+		Carro carro2 = new Carro((int) 1.6f);
 		carro2.potencia = 10;
 		carro2.nome = "Carango";
-		carro2.velocidade = 1.6f;
+		carro2.velocidade = (int) 1.6f;
 		
 		Carro carro3 = new Carro(0);
 		//carro3.potencia = 10;
