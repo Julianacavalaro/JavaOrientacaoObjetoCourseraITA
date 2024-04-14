@@ -2,12 +2,12 @@
 public class ContaCorrente {
 	int saldo;
 	
-	public int sacar(int valor) {
-		if(valor < saldo) {
+	public int sacar(int valorSaque) {
+		if(valorSaque > saldo) {
 			return 0;
 		}else
-			saldo = saldo - valor;
-		return valor;
+			saldo = saldo - valorSaque;
+		return valorSaque;
 
 	}
 	

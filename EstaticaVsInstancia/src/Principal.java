@@ -6,9 +6,9 @@ public class Principal {
 		Somador s1 = new Somador();
 		s1.nome = "Somador 1";
 		Somador s2 = new Somador();
-		s1.nome = "Somador 1";
+		s2.nome = "Somador 2";
 		Somador s3 = new Somador();
-		s1.nome = "Somador 1";
+		s3.nome = "Somador 3";
 		
 		for(int i=0; i <3; i++) {
 			s1.somar();
