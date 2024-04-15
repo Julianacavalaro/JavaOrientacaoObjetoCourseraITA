@@ -4,6 +4,8 @@ import org.junit.jupiter.api.Test;
 
 class TesteContaCorrente {
 
+	ContaCorrente contaCorrente;
+	
 	@Test
 	void depositar() {
 		ContaCorrente contaComDeposito = new ContaCorrente();
