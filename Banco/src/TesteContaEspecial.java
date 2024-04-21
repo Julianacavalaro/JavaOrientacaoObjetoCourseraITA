@@ -15,6 +15,7 @@ public class TesteContaEspecial  extends TesteContaCorrente{
 	@Test
 	public void sacarLimite() {
 	int valorSaque = contaCorrente.sacar(100);
+	System.out.println("sacarLimite()"+ contaCorrente.saldo);
 	assertEquals(contaCorrente.saldo, -90);
 	assertEquals(valorSaque, 100);
 	}
@@ -22,6 +23,7 @@ public class TesteContaEspecial  extends TesteContaCorrente{
 	@Test
 	public void sacarSemLimite() {
 	int valorSaque = contaCorrente.sacar(200);
+	System.out.println("sacarSemLimite()"+ contaCorrente.saldo);
 	assertEquals(contaCorrente.saldo, 10);
 	assertEquals(valorSaque, 0);
 	}
